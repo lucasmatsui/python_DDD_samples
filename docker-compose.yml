@@ -1,0 +1,17 @@
+version: '3'
+services:
+  api:
+    build:
+      context: .
+      target: dev-envs
+    container_name: fastapi-application
+    command: ["./startup.sh" ]
+    tty: true
+    environment:
+      env_file: .env
+    ports:
+      - '${APP_PORT}:${APP_PORT}'
+    volumes:
+      - ./:/app
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: "no"
