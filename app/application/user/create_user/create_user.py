@@ -1,8 +1,8 @@
-from app.domain.user.entities.user import User
-from app.domain.user.email import Email
-from app.application.user.dtos.input.create_user_input import CreateUserInput
-from app.application.user.dtos.output.create_user_output import CreateUserOutput
-from app.domain.user.repositories.user_repository import UserRepository
+from app.domain.model.user.user import User
+from app.domain.model.user.email import Email
+from app.domain.model.user.user_repository import UserRepository
+from app.application.user.create_user.create_user_input import CreateUserInput
+from app.application.user.create_user.create_user_output import CreateUserOutput
 
 class CreateUser:
   user_repository: UserRepository

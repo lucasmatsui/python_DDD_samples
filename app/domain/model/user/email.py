@@ -1,4 +1,4 @@
-from app.domain.user.errors.invalid_email_error import InvalidEmailError
+from app.domain.model.user.invalid_email_error import InvalidEmailError
 
 class Email:
   value: str

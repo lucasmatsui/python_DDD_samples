@@ -1,5 +1,6 @@
 import abc
-from app.domain.user.entities.user import User
+
+from app.domain.model.user.user import User
 
 class UserRepository:
   @abc.abstractmethod

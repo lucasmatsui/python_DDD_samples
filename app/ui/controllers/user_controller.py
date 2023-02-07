@@ -1,8 +1,8 @@
 from fastapi import FastAPI, Request
-from app.domain.user.errors.invalid_email_error import InvalidEmailError
-from app.application.user.use_cases.create_user import CreateUser
-from app.application.user.dtos.input.create_user_input import CreateUserInput
-from app.application.user.dtos.output.create_user_output import CreateUserOutput
+from app.application.user.create_user.create_user import CreateUser
+from app.application.user.create_user.create_user_input import CreateUserInput
+from app.application.user.create_user.create_user_output import CreateUserOutput
+from app.domain.model.user.invalid_email_error import InvalidEmailError
 from app.infra.repositories.mysql_user_repository import MysqlUserRepository
 from app.infra.utils.response_error import response_error
 

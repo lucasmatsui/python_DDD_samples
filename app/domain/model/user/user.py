@@ -1,5 +1,6 @@
 from uuid import UUID, uuid4
-from app.domain.user.email import Email
+
+from app.domain.model.user.email import Email
 
 class User:
   __id: UUID
