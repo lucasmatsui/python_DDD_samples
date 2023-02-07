@@ -6,6 +6,7 @@ This project follow the main DDD tatical concepts:
 
 ### Folder Structure
 To build this representation of folder structure, it was following the moduralization concepts showing in DDD book
+```
 ├── application
 │   └── user
 │       └── create_user
@@ -25,12 +26,13 @@ To build this representation of folder structure, it was following the moduraliz
 │   │   └── mysql_user_repository.py
 │   └── utils
 │       └── response_error.py
-├── __init__.py
-├── main.py
 └── ui
     └── controllers
         └── user_controller.py
+├── __init__.py
+├── main.py
 
+```
 
 ## License
 
