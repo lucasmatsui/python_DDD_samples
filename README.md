@@ -5,7 +5,7 @@ This project follow the main DDD tatical concepts:
 - Infrastructure Layer
 
 ### Folder Structure
-To build this representation of folder structure, it was following the moduralization concepts showing in DDD book
+To build this representation of folder structure, it was following the moduralization concepts showing in DDD's book
 ```
 ├── application
 │   └── user
