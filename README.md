@@ -34,6 +34,10 @@ To build this representation of folder structure, it was following the moduraliz
 
 ```
 
+### ⚠️ Note
+> remembering that these entities and application services do not represent the ubiquitous language of any project, since creating a user is crud terminology, which often does not reflect the language of the domain.
+This is just an example of how to structure your application following modularization concepts
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
