@@ -6,17 +6,18 @@ class User:
   __id: UUID
   __email: Email
 
-  def create_user(self, email: Email):
-    self.__id = uuid4()
-    self.__email = email
-
-    return self
-
-  def fill_user(self, id: UUID, email: Email):
+  def __init__(self, id: UUID, email: Email) -> None:
     self.__id = id
     self.__email = email
+    
+  @staticmethod
+  def create_user(email: Email):
+    id = uuid4()
 
-    return self
+    return User(id, email)
+
+  def change_email(self, email: Email):
+    self.__email = email
 
   def get_id(self):
     return self.__id

@@ -11,7 +11,7 @@ class CreateUser:
     self.user_repository = user_repository
 
   def execute(self, input: CreateUserInput) -> CreateUserOutput:
-    user = User().create_user(
+    user = User.create_user(
       Email(input.email)
     )
 
